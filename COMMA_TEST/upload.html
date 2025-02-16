@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Image to S3</h1>
+        <form id="uploadForm">
+            <input type="file" id="imageInput" accept="image/*" required>
+            <button type="submit">Upload Image</button>
+        </form>
+        <p><a href="gallery.html">View Gallery</a></p>
+        <div id="message"></div>
+    </div>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.149.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
